@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2015, 9:41:43 PM
+    Author     : cesarsuarez
+*/
+
+$color-background: gray;
+$color-menu-bg: red;
+$fuente:Arial, Helvetica, sans-serif;
+
+@mixin superlink($color) {
+  a {
+    background-color:$color;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+  }
+}
+
+* {
+        margin:0px;
+        padding:0px;
+}
+
+body{
+    background-color: $color-background;
+}
+
+#header {
+    font-family: $fuente;
+    width: 100%;
+    overflow: auto;
+    background-color: $color-menu-bg;
+}
+
+ul, ol {
+        list-style:none;
+}
+
+.nav > li {
+        float:left;
+}
+
+.nav 
+{
+    width: 960px;
+    background-color: $color-menu-bg;
+    overflow: auto;
+    margin: 0 auto;
+    li  {
+        @include superlink($color-menu-bg); 
+    }
+    
+    li {
+        a:hover {
+        
+           background-color:#434343;
+        
+        }
+    }
+    
+    li {
+        ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        &:hover{
+            >ul {
+                display:block;
+            }
+        }
+    }   
+    
+    li{
+        ul{
+            li{
+                position:relative;
+                
+                ul{
+                    right:-140px;
+                    top:0px;   
+                }
+            }
+            
+        }
+
+    }
+}
+$class-slug: for !default;
+
+@for $i from 1 through 4{
+  .#{$class-slug}-#{$i}{
+    width: 60px + $i;
+  }
+}
+
+			

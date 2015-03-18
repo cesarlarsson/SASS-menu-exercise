@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2015, 9:41:43 PM
+    Author     : cesarsuarez
+*/
+
+$color-background: gray;
+$color-menu-bg: red;
+$fuente:Arial, Helvetica, sans-serif;
+$class-slug: for !default;
+
+@mixin superlink($color) {
+  a {
+    background-color:$color;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+  }
+}
+
+* {
+        margin:0px;
+        padding:0px;
+}
+
+body{
+    background-color: $color-background;
+}
+
+#header {
+    font-family: $fuente;
+    width: 100%;
+    overflow: auto;
+    background-color: $color-menu-bg;
+}
+
+ul, ol {
+        list-style:none;
+}
+
+/*.nav > li {
+        float:left;
+}*/
+
+.nav 
+{
+    width: 960px;
+    background-color: $color-menu-bg;
+    overflow: auto;
+    margin: 0 auto;
+    > li{
+        float:left;
+    }
+    li  {
+        @include superlink($color-menu-bg);
+        
+        
+        a:hover {
+        
+           background-color:#434343;
+        
+        }
+
+        ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        &:hover{
+            >ul {
+                display:block;
+            }
+        }
+
+        ul{
+            li{
+                position:relative;
+                
+                ul{
+                    right:-140px;
+                    top:0px;   
+                }
+            }
+            
+        }
+
+    }
+}
+
+
+@for $i from 1 through 10{
+  .#{$class-slug}-#{$i}{
+    width: 60px + (40*$i);
+    background-color: #010203+(20*$i);
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+    margin-top:  20px;
+  }
+}
+
+			

@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2015, 9:41:43 PM
+    Author     : cesarsuarez
+*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: gray; }
+
+#header {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow: auto;
+  background-color: red; }
+
+ul, ol {
+  list-style: none; }
+
+/*.nav > li {
+        float:left;
+}*/
+.nav {
+  width: 960px;
+  background-color: red;
+  overflow: auto;
+  margin: 0 auto; }
+  .nav > li {
+    float: left; }
+  .nav li a {
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block; }
+  .nav li a:hover {
+    background-color: #434343; }
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+  .nav li:hover > ul {
+    display: block; }
+  .nav li ul li {
+    position: relative; }
+    .nav li ul li ul {
+      right: -140px;
+      top: 0px; }
+
+.for-1 {
+  width: 100px;
+  background-color: #151617;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-2 {
+  width: 140px;
+  background-color: #292a2b;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-3 {
+  width: 180px;
+  background-color: #3d3e3f;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-4 {
+  width: 220px;
+  background-color: #515253;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-5 {
+  width: 260px;
+  background-color: #656667;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-6 {
+  width: 300px;
+  background-color: #797a7b;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-7 {
+  width: 340px;
+  background-color: #8d8e8f;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-8 {
+  width: 380px;
+  background-color: #a1a2a3;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-9 {
+  width: 420px;
+  background-color: #b5b6b7;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+.for-10 {
+  width: 460px;
+  background-color: #c9cacb;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=estilo.css.map */
